@@ -2,10 +2,10 @@ import { createStore } from 'redux';
 
 function reducer(state, action) {
   switch(action.type) {
-    case 'ADD_TODO' : {
+    case 'TODO_ADD' : {
       return applyAddTodo(state, action);
     }
-    case 'TOGGLE_TODO' : {
+    case 'TODO_TOGGLE' : {
       return applyToggleTodo(state, action);
     }
     default : return state;
@@ -35,17 +35,17 @@ const unsubscribe = store.subscribe(() => {
 });
 
 store.dispatch({
-  type: 'ADD_TODO',
+  type: 'TODO_ADD',
   todo: { id: '0', name: 'learn redux', completed: false },
 });
 
 store.dispatch({
-  type: 'ADD_TODO',
+  type: 'TODO_ADD',
   todo: { id: '1', name: 'learn mobx', completed: false },
 });
 
 store.dispatch({
-  type: 'TOGGLE_TODO',
+  type: 'TODO_TOGGLE',
   todo: { id: '0' },
 });
 
