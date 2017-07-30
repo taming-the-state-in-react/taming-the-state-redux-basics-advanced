@@ -16,7 +16,6 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "redux": "^3.7.2",
-    "redux-logger": "^3.0.6"
+    "normalizr": "^3.2.3"
   }
 }
