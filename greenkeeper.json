@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "advanced-actions/package.json",
+        "advanced-reducers/package.json",
+        "basics/package.json",
+        "immutability-with-es6/package.json",
+        "middleware/package.json",
+        "normalizr/package.json"
+      ]
+    }
+  }
+}
